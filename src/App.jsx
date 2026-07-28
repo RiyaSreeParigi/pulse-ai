@@ -5,6 +5,7 @@ import Pendant from "./components/Pendant";
 import DigitalTwin from "./components/DigitalTwin";
 import Features from "./components/Features";
 import Dashboard from "./components/Dashboard";
+import HealthReports from "./components/HealthReports";
 import AIAssistant from "./components/AIAssistant";
 import Login from "./components/Login";
 import Contact from "./components/Contact";
@@ -29,6 +30,8 @@ function App() {
       <Features />
 
       <Dashboard />
+
+      <HealthReports />
 
       <AIAssistant />
 
