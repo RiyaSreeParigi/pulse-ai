@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
 import Pendant from "./components/Pendant";
 import Features from "./components/Features";
 import Dashboard from "./components/Dashboard";
@@ -16,6 +17,8 @@ function App() {
       <Navbar />
 
       <Hero />
+
+      <About />
 
       <Pendant />
 
