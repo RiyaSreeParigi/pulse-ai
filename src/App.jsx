@@ -6,6 +6,7 @@ import DigitalTwin from "./components/DigitalTwin";
 import Features from "./components/Features";
 import Dashboard from "./components/Dashboard";
 import HealthReports from "./components/HealthReports";
+import Notifications from "./components/Notifications";
 import AIAssistant from "./components/AIAssistant";
 import Login from "./components/Login";
 import Contact from "./components/Contact";
@@ -32,6 +33,8 @@ function App() {
       <Dashboard />
 
       <HealthReports />
+
+      <Notifications />
 
       <AIAssistant />
 
