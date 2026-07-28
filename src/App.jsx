@@ -4,6 +4,7 @@ import About from "./components/About";
 import Pendant from "./components/Pendant";
 import Features from "./components/Features";
 import Dashboard from "./components/Dashboard";
+import AIAssistant from "./components/AIAssistant";
 import Login from "./components/Login";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -25,6 +26,8 @@ function App() {
       <Features />
 
       <Dashboard />
+
+      <AIAssistant />
 
       <Login />
 
