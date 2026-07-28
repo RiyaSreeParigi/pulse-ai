@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Pendant from "./components/Pendant";
+import DigitalTwin from "./components/DigitalTwin";
 import Features from "./components/Features";
 import Dashboard from "./components/Dashboard";
 import AIAssistant from "./components/AIAssistant";
@@ -22,6 +23,8 @@ function App() {
       <About />
 
       <Pendant />
+
+      <DigitalTwin />
 
       <Features />
 
