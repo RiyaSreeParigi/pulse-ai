@@ -5,9 +5,9 @@ function App() {
     <div className="app">
 
       <nav className="navbar">
-        <h1>PULSE AI</h1>
+        <h1 className="logo">PULSE AI</h1>
 
-        <ul>
+        <ul className="nav-links">
           <li>Home</li>
           <li>Features</li>
           <li>Dashboard</li>
@@ -16,33 +16,42 @@ function App() {
       </nav>
 
       <section className="hero">
-        <h2>Welcome to PULSE AI</h2>
+        <div className="hero-content">
+          <h2>Your AI Health Companion</h2>
 
-        <p>
-          Your intelligent health companion powered by AI.
-        </p>
+          <p>
+            Monitor your health, receive AI-powered insights,
+            and stay one step ahead with intelligent health tracking.
+          </p>
 
-        <button>Get Started</button>
+          <button className="btn">
+            Get Started
+          </button>
+        </div>
       </section>
 
       <section className="features">
 
         <div className="card">
           <h3>❤️ Heart Monitoring</h3>
-          <p>Track your heart health in real time.</p>
+          <p>Track heart rate and receive instant alerts.</p>
         </div>
 
         <div className="card">
-          <h3>🧠 AI Analysis</h3>
-          <p>Receive AI-powered health insights.</p>
+          <h3>🧠 AI Health Analysis</h3>
+          <p>AI analyzes your health trends over time.</p>
         </div>
 
         <div className="card">
-          <h3>📊 Dashboard</h3>
-          <p>View your health statistics and trends.</p>
+          <h3>📊 Health Dashboard</h3>
+          <p>View charts, reports, and daily summaries.</p>
         </div>
 
       </section>
+
+      <footer className="footer">
+        <p>© 2026 PULSE AI | Designed by Riya Sree Parigi</p>
+      </footer>
 
     </div>
   );
