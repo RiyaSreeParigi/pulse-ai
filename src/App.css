@@ -1,68 +1,149 @@
-import "./App.css";
-
-function App() {
-  return (
-    <div className="app">
-      {/* Navigation */}
-      <nav className="navbar">
-        <h1 className="logo">PULSE AI</h1>
-
-        <ul className="nav-links">
-          <li>Home</li>
-          <li>Features</li>
-          <li>Dashboard</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-
-      {/* Hero Section */}
-      <section className="hero">
-        <div className="hero-content">
-          <h2>Your AI Health Companion</h2>
-
-          <p>
-            Monitor your health, receive AI-powered insights,
-            and stay one step ahead with intelligent health tracking.
-          </p>
-
-          <button className="btn">
-            Get Started
-          </button>
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="features">
-
-        <div className="card">
-          <h3>❤️ Heart Monitoring</h3>
-          <p>
-            Track heart rate and receive instant alerts.
-          </p>
-        </div>
-
-        <div className="card">
-          <h3>🧠 AI Health Analysis</h3>
-          <p>
-            AI analyzes your health trends over time.
-          </p>
-        </div>
-
-        <div className="card">
-          <h3>📊 Health Dashboard</h3>
-          <p>
-            View charts, reports, and daily summaries.
-          </p>
-        </div>
-
-      </section>
-
-      {/* Footer */}
-      <footer className="footer">
-        <p>© 2026 PULSE AI | Designed by Riya Sree Parigi</p>
-      </footer>
-    </div>
-  );
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
 }
 
-export default App;
+body {
+  background: linear-gradient(135deg, #020617, #0f172a, #1e293b);
+  color: white;
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Navigation */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-links li:hover {
+  color: #38bdf8;
+}
+
+
+/* Hero Section */
+
+.hero {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+.hero-content h2 {
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+
+.hero-content p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 20px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.btn {
+  margin-top: 35px;
+  padding: 16px 40px;
+  border-radius: 50px;
+  border: none;
+  background: #38bdf8;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+
+/* Features */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 60px;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 40px;
+  color: #cbd5e1;
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content h2 {
+    font-size: 40px;
+  }
+
+  .features {
+    padding: 30px;
+  }
+
+}
