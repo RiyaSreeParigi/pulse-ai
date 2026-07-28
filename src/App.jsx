@@ -1,57 +1,21 @@
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Features from "./components/Features";
+import Footer from "./components/Footer";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="app">
 
-      <nav className="navbar">
-        <h1 className="logo">PULSE AI</h1>
+      <Navbar />
 
-        <ul className="nav-links">
-          <li>Home</li>
-          <li>Features</li>
-          <li>Dashboard</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
+      <Hero />
 
-      <section className="hero">
-        <div className="hero-content">
-          <h2>Your AI Health Companion</h2>
+      <Features />
 
-          <p>
-            Monitor your health, receive AI-powered insights,
-            and stay one step ahead with intelligent health tracking.
-          </p>
-
-          <button className="btn">
-            Get Started
-          </button>
-        </div>
-      </section>
-
-      <section className="features">
-
-        <div className="card">
-          <h3>❤️ Heart Monitoring</h3>
-          <p>Track heart rate and receive instant alerts.</p>
-        </div>
-
-        <div className="card">
-          <h3>🧠 AI Health Analysis</h3>
-          <p>AI analyzes your health trends over time.</p>
-        </div>
-
-        <div className="card">
-          <h3>📊 Health Dashboard</h3>
-          <p>View charts, reports, and daily summaries.</p>
-        </div>
-
-      </section>
-
-      <footer className="footer">
-        <p>© 2026 PULSE AI | Designed by Riya Sree Parigi</p>
-      </footer>
+      <Footer />
 
     </div>
   );
