@@ -10,6 +10,7 @@ import Notifications from "./components/Notifications";
 import AIAssistant from "./components/AIAssistant";
 import Profile from "./components/Profile";
 import Pricing from "./components/Pricing";
+import FAQ from "./components/FAQ";
 import Login from "./components/Login";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -43,6 +44,8 @@ function App() {
       <Profile />
 
       <Pricing />
+
+      <FAQ />
 
       <Login />
 
