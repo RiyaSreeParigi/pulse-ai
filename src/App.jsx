@@ -9,6 +9,7 @@ import HealthReports from "./components/HealthReports";
 import Notifications from "./components/Notifications";
 import AIAssistant from "./components/AIAssistant";
 import Profile from "./components/Profile";
+import Pricing from "./components/Pricing";
 import Login from "./components/Login";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -40,6 +41,8 @@ function App() {
       <AIAssistant />
 
       <Profile />
+
+      <Pricing />
 
       <Login />
 
