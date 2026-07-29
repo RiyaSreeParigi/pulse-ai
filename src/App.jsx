@@ -8,6 +8,7 @@ import Dashboard from "./components/Dashboard";
 import HealthReports from "./components/HealthReports";
 import Notifications from "./components/Notifications";
 import AIAssistant from "./components/AIAssistant";
+import Profile from "./components/Profile";
 import Login from "./components/Login";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -37,6 +38,8 @@ function App() {
       <Notifications />
 
       <AIAssistant />
+
+      <Profile />
 
       <Login />
 
